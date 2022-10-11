@@ -1,0 +1,120 @@
+#nav_bar 
+{
+    width : 100vw;
+    height : 250px;
+    display : flex;
+    flex-direction: column;
+    background-image : linear-gradient(rgba(0,0,0.4),rgba(0,0,0,0.4)),url('/images/header.png');
+    background-position : center;
+    background-size : cover;
+    justify-content: space-around;
+
+    &_header 
+    {
+        height : 100px;
+        display : flex;
+        flex-direction: column;
+        align-self : center;
+        margin-top : 20px;
+        font-family: 'bowlby_oneregular';
+        color : white;
+        letter-spacing : 1px;
+
+        h1 
+        {
+            font-size : 40px;
+        }
+
+        img 
+        {
+            height : 50px;
+            width : 50px;
+        }
+        p 
+        {
+            text-align : center;
+            font-family: 'Voltaire', sans-serif;
+        }
+    }
+
+    &_navigation 
+    {
+        width : 64%;
+        margin-left : 510px;
+        display : flex;
+        flex-direction : row;
+
+        ul 
+        {
+            display : flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width : 500px;
+            
+            a 
+            {
+                cursor : pointer;
+                color : white;
+                font-family : 'Voltaire';
+                font-size : 25px;
+                
+
+                &:hover 
+                {
+                    transform : translateY(-16%);
+                }
+                
+                li 
+                {
+                    list-style : none;
+                }
+            }
+        }
+
+        input 
+        {
+            margin-left : auto;
+        }
+
+        &_search 
+        {
+            margin-left : auto;
+
+            input 
+            {
+                height : 35px;
+                width : 200px;
+                border-radius : 2px;
+                outline : none;
+                border : none;
+                padding : 3px;
+                font-family : 'Voltaire';
+                font-size: 15px;
+                text-indent: 5%;
+                background : #d9d9d9;
+            }
+
+            button 
+            {
+                height : 40px;
+                width : 100px;
+                outline : none;
+                border : none;
+                border-radius: 3px;
+                background : #240046;
+                color : white;
+                font-family: 'bowlby_oneregular';
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-left : 10px;
+                
+                &:hover 
+                {
+                    background : #10002b;
+                }
+            }
+        }
+
+    }
+}

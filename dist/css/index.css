@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Voltaire&display=swap");
+@font-face {
+  font-family: "bowlby_oneregular";
+  src: url("bowlbyone-regular-webfont.woff2") format("woff2"), url("bowlbyone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav_bar {
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.4)), url("/images/header.png");
+  background-position: center;
+  background-size: cover;
+  justify-content: space-around;
+}
+#nav_bar_header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 20px;
+  font-family: "bowlby_oneregular";
+  color: white;
+  letter-spacing: 1px;
+}
+#nav_bar_header h1 {
+  font-size: 40px;
+}
+#nav_bar_header img {
+  height: 50px;
+  width: 50px;
+}
+#nav_bar_header p {
+  text-align: center;
+  font-family: "Voltaire", sans-serif;
+}
+#nav_bar_navigation {
+  width: 64%;
+  margin-left: 510px;
+  display: flex;
+  flex-direction: row;
+}
+#nav_bar_navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500px;
+}
+#nav_bar_navigation ul a {
+  cursor: pointer;
+  color: white;
+  font-family: "Voltaire";
+  font-size: 25px;
+}
+#nav_bar_navigation ul a:hover {
+  transform: translateY(-16%);
+}
+#nav_bar_navigation ul a li {
+  list-style: none;
+}
+#nav_bar_navigation input {
+  margin-left: auto;
+}
+#nav_bar_navigation_search {
+  margin-left: auto;
+}
+#nav_bar_navigation_search input {
+  height: 35px;
+  width: 200px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  padding: 3px;
+  font-family: "Voltaire";
+  font-size: 15px;
+  text-indent: 5%;
+  background: #d9d9d9;
+}
+#nav_bar_navigation_search button {
+  height: 40px;
+  width: 100px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #240046;
+  color: white;
+  font-family: "bowlby_oneregular";
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+#nav_bar_navigation_search button:hover {
+  background: #10002b;
+}
+
+body {
+  background-color: black;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+
+@font-face {
+    font-family: 'bowlby_oneregular';
+    src: url('bowlbyone-regular-webfont.woff2') format('woff2'),
+    url('bowlbyone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import 'config';
+@import 'navbar';
+
+body 
+{
+    background-color: black;
+}
