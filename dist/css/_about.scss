@@ -1,0 +1,100 @@
+#about 
+{
+    display : flex;
+    width : 100vw;
+    min-height : 40vh;
+    background : #2b2d42;
+    padding : 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+    &_1 
+    {
+        display : flex;
+        flex-direction: column;
+
+        &_heading 
+        {
+            color : white;
+            font-family: 'bowlby_oneregular';
+            font-weight: lighter;
+            font-size : 25px;
+        }
+        
+        &_content 
+        {
+            font-family : 'Voltaire';
+            color : white;
+            margin-top : 20px;
+            width : 40vw;
+            line-height: 1.7rem;
+        }
+    }
+
+    &_2 
+    {
+        display : flex;
+        flex-direction: column;
+        width : 400px;
+        height : 230px;
+        background : #0f1020;
+        align-items: center;
+        padding : 15px;
+        border-radius: 3px;
+        justify-content: space-around;
+        
+        &_header 
+        {
+            color : white;
+            font-family: 'Voltaire';
+            font-size: 20px;
+            letter-spacing: 1px;
+
+            &:after 
+            {
+                content : '';
+                width : 20px;
+                display : block;
+                background : white;
+                height : 1px;
+                margin : auto;
+                margin-top : 5px;
+            }
+        }
+
+        &_nav 
+        {
+            align-self: flex-start;
+            margin-left : 50px;
+            display : flex;
+            flex-direction: column;
+            padding : 5px;
+
+            a 
+            {
+                color : white;
+                font-family: 'Voltaire';
+                font-weight: lighter;
+                margin-bottom : 10px;
+                cursor: pointer;
+
+                &:hover 
+                {
+                    text-decoration: underline;  
+                    transform : translateY(-6%);     
+                }
+
+                i 
+                {
+                    margin-right: 15px;
+                }
+
+                li 
+                {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
