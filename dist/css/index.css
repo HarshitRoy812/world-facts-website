@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #nav_bar {
   width: 100vw;
   height: 250px;
@@ -90,8 +94,8 @@
   outline: none;
   border: none;
   border-radius: 3px;
-  background: #240046;
-  color: white;
+  background: #fca311;
+  color: black;
   font-family: "bowlby_oneregular";
   cursor: pointer;
   text-transform: uppercase;
@@ -99,7 +103,7 @@
   margin-left: 10px;
 }
 #nav_bar_navigation_search button:hover {
-  background: #10002b;
+  background: #ffbe0b;
 }
 
 #about {
@@ -133,7 +137,7 @@
   flex-direction: column;
   width: 400px;
   height: 230px;
-  background: #0f1020;
+  background: #8338ec;
   align-items: center;
   padding: 15px;
   border-radius: 3px;
@@ -177,4 +181,12 @@
 }
 #about_2_nav a li {
   list-style: none;
+}
+
+#facts {
+  width: 100vw;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/facts.png");
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=index.css.map */
