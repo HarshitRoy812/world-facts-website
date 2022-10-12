@@ -8,6 +8,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Birthday Girl Demo';
+    src: url('BirthdayGirlDemoRegular.woff2') format('woff2'),
+        url('BirthdayGirlDemoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import 'config';
 @import 'navbar';
 @import 'about';

@@ -2,7 +2,7 @@
 {
     display : flex;
     width : 100vw;
-    min-height : 40vh;
+    min-height : 60vh;
     background : #2b2d42;
     padding : 20px;
     flex-direction: row;
@@ -17,9 +17,11 @@
         &_heading 
         {
             color : white;
-            font-family: 'bowlby_oneregular';
+            font-family: 'Birthday Girl Demo';
             font-weight: lighter;
-            font-size : 25px;
+            font-size : 60px;
+            text-transform: uppercase;
+
         }
         
         &_content 
@@ -30,6 +32,32 @@
             width : 40vw;
             line-height: 1.7rem;
         }
+
+        a 
+        {
+            margin-top : 50px;
+            width : 230px;
+            
+            button 
+            {
+                width : 100%;
+                outline : none;
+                border : none;
+                padding : 10px;
+                background : #ffba08;
+                color : black;
+                font-family: 'bowlby_oneregular';
+                cursor: pointer;
+                letter-spacing: 1px;
+                border-radius: 4px;
+                text-transform: capitalize;
+
+                &:hover 
+                {
+                    background : #ffd300;
+                }
+            }
+        }
     }
 
     &_2 
@@ -38,7 +66,7 @@
         flex-direction: column;
         width : 400px;
         height : 230px;
-        background : #8338ec;
+        background : #22223b;
         align-items: center;
         padding : 15px;
         border-radius: 3px;
@@ -78,6 +106,7 @@
                 font-weight: lighter;
                 margin-bottom : 10px;
                 cursor: pointer;
+                text-decoration: none;
 
                 &:hover 
                 {

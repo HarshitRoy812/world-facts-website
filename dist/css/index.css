@@ -5,6 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Birthday Girl Demo";
+  src: url("BirthdayGirlDemoRegular.woff2") format("woff2"), url("BirthdayGirlDemoRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +70,7 @@ body {
   color: white;
   font-family: "Voltaire";
   font-size: 25px;
+  text-decoration: none;
 }
 #nav_bar_navigation ul a:hover {
   transform: translateY(-16%);
@@ -109,7 +117,7 @@ body {
 #about {
   display: flex;
   width: 100vw;
-  min-height: 40vh;
+  min-height: 60vh;
   background: #2b2d42;
   padding: 20px;
   flex-direction: row;
@@ -121,9 +129,10 @@ body {
 }
 #about_1_heading {
   color: white;
-  font-family: "bowlby_oneregular";
+  font-family: "Birthday Girl Demo";
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 60px;
+  text-transform: uppercase;
 }
 #about_1_content {
   font-family: "Voltaire";
@@ -132,12 +141,32 @@ body {
   width: 40vw;
   line-height: 1.7rem;
 }
+#about_1 a {
+  margin-top: 50px;
+  width: 230px;
+}
+#about_1 a button {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background: #ffba08;
+  color: black;
+  font-family: "bowlby_oneregular";
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+#about_1 a button:hover {
+  background: #ffd300;
+}
 #about_2 {
   display: flex;
   flex-direction: column;
   width: 400px;
   height: 230px;
-  background: #8338ec;
+  background: #22223b;
   align-items: center;
   padding: 15px;
   border-radius: 3px;
@@ -171,6 +200,7 @@ body {
   font-weight: lighter;
   margin-bottom: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 #about_2_nav a:hover {
   text-decoration: underline;
@@ -185,8 +215,16 @@ body {
 
 #facts {
   width: 100vw;
-  height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/facts.png");
-  background-size: cover;
-  background-position: center;
+  min-height: 80vh;
+  background: #022b3a;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+#facts p {
+  color: white;
+  font-family: "Voltaire";
+  margin-left: 50px;
+  height: 20px;
 }/*# sourceMappingURL=index.css.map */

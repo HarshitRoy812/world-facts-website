@@ -1,8 +1,21 @@
 #facts 
 {
     width : 100vw;
-    height : 50vh;
-    background-image : linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/images/facts.png');
-    background-size : cover;
-    background-position: center;
+    min-height : 80vh;
+    // background-image : linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/images/facts.png');
+    // background-size : cover;
+    // background-position: center;
+    background : #022b3a;
+    display : flex;
+    flex-direction: row;
+    padding : 20px;
+    flex-wrap: wrap;
+
+    p 
+    {
+        color : white;
+        font-family : 'Voltaire';
+        margin-left : 50px;
+        height : 20px;
+    }
 }
