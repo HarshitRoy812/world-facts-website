@@ -17,7 +17,20 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Inaptly';
+    src: url('Inaptly-Regular.woff2') format('woff2'),
+        url('Inaptly-Regular.woff') format('woff'),
+        url('Inaptly-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 @import 'config';
 @import 'navbar';
 @import 'about';
 @import 'facts';
+@import 'social';
+@import 'footer'

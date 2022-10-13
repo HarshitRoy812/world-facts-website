@@ -34,11 +34,11 @@
                 <a href = '#nav_bar'> <li> Home </li> </a>
                 <a href = '#about'> <li> About </li> </a>
                 <a href = '#facts'> <li> Facts </li> </a>
-                <a href = '#home'> <li> Contact  </li> </a>
+                <a href = '#social-links'> <li> Contact  </li> </a>
             </ul>
             <div id = 'nav_bar_navigation_search'>
-                <input type = 'text'> 
-                <button type = 'button'> Search </button>
+                <input type = 'text' id = 'text'> 
+                <button type = 'button' onclick = 'searchPage();'> Search </button>
             </div>
         </div>
 
@@ -115,8 +115,34 @@
             
         </div>
 
+        <div id = 'social-links'>
+
+            <h1> FOLLOW US ON SOCIAL MEDIA </h1>
+
+            <img src = 'images/arrow.png'> 
+
+            <div id = 'social-links_link'>
+                <a href = 'https://www.facebook.com' target = '_blank'> <i class="fa-brands fa-facebook"></i> </a>
+                <a href="https://www.twitter.com" target = '_blank'> <i class="fa-brands fa-twitter"></i> </a>
+                <a href="https://www.youtube.com" target = '_blank'> <i class="fa-brands fa-youtube"></i> </a>
+                <a href="https://www.instagram.com" target = '_blank'> <i class="fa-brands fa-instagram"></i> </a>
+            </div>
+
+        </div>
+
     </main>
+
+    <footer id = 'footer'>
+        <div id = 'footer_1'>
+            <a> Terms & Conditions </a>
+            <a> Privacy Policy </a>
+            <a> Help & Support </a>
+            <a> Legal Notices </a>
+            <p> @Copyright 2022, Globepedia </p>
+        </div>
+    </footer>
     
+    <script src = 'index.js'></script> 
     
 </body>
 

@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Inaptly";
+  src: url("Inaptly-Regular.woff2") format("woff2"), url("Inaptly-Regular.woff") format("woff"), url("Inaptly-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -227,4 +234,119 @@ body {
   font-family: "Voltaire";
   margin-left: 50px;
   height: 20px;
+}
+
+#social-links {
+  width: 100vw;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/facts.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+#social-links h1 {
+  color: white;
+  font-family: "Inaptly";
+  text-align: center;
+  font-size: 50px;
+  font-weight: lighter;
+  text-transform: lowercase;
+}
+#social-links img {
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  transform: rotate(100deg);
+  position: relative;
+  right: 250px;
+  -webkit-animation: move;
+          animation: move;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes move {
+  from {
+    top: 0px;
+    right: 250px;
+  }
+  to {
+    top: 10px;
+    right: 230px;
+  }
+}
+@keyframes move {
+  from {
+    top: 0px;
+    right: 250px;
+  }
+  to {
+    top: 10px;
+    right: 230px;
+  }
+}
+#social-links_link {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 400px;
+}
+#social-links_link a {
+  text-decoration: none;
+}
+#social-links_link a:hover {
+  transform: scale(1.1, 1.1);
+}
+#social-links_link i {
+  font-size: 46px;
+}
+#social-links_link .fa-facebook {
+  color: #4361ee;
+}
+#social-links_link .fa-twitter {
+  color: #4cc9f0;
+}
+#social-links_link .fa-youtube {
+  color: #ba181b;
+}
+#social-links_link .fa-instagram {
+  color: #ff0054;
+}
+
+#footer {
+  width: 100vw;
+  height: 7vh;
+  background: black;
+  color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+#footer_1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+#footer_1 a {
+  font-family: "Inaptly";
+  font-size: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#footer_1 a:hover {
+  text-decoration: underline;
+}
+#footer_1 p {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 15px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,39 @@
+#footer 
+{
+    width : 100vw;
+    height : 7vh;
+    background : black;
+    color : #d9d9d9;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    padding : 20px;
+
+    &_1 
+    {
+        display : flex;
+        flex-direction : row;
+        width : 100%;
+        align-items: center;
+        justify-content: space-around;
+
+        a
+        {
+            font-family : 'Inaptly';
+            font-size: 15px;
+            margin-left : 20px;
+            cursor: pointer;
+            &:hover 
+            {
+                text-decoration: underline;
+            }
+        }
+
+        p 
+        {
+            margin-left : auto;
+            margin-right : 20px;
+            font-size : 15px;
+        }
+    }
+}

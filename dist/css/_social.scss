@@ -1,0 +1,90 @@
+#social-links 
+{
+    width : 100vw;
+    height : 50vh;
+    background-image : linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../../images/facts.png');
+    background-position : center;
+    background-size : cover;
+    display : flex;
+    flex-direction : column;
+    padding-top : 50px;
+
+    h1 
+    {
+        color : white;
+        font-family: 'Inaptly';
+        text-align: center;
+        font-size : 50px;
+        font-weight: lighter;
+        text-transform: lowercase;
+    }
+
+    img 
+    {
+        height : 100px;
+        width : 100px; 
+        align-self : center;
+        transform : rotate(100deg);
+        position : relative;
+        right : 250px;
+        animation : move;
+        animation-duration : 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes move 
+    {
+        from 
+        {
+            top : 0px;
+            right : 250px;
+        }
+        to 
+        {
+            top : 10px;
+            right : 230px;
+        }   
+    }
+
+    &_link 
+    {
+        align-self : center;
+        display : flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width : 400px;
+        a 
+        {
+            text-decoration : none;
+
+            &:hover 
+            {
+                transform : scale(1.1,1.1);
+            }
+        }
+
+        i 
+        {
+            font-size : 46px;
+        }
+
+        .fa-facebook 
+        {
+            color : #4361ee;
+        }
+        .fa-twitter 
+        {
+            color : #4cc9f0;
+        }
+        .fa-youtube 
+        {
+            color : #ba181b;
+        }
+        .fa-instagram 
+        {
+            color : #ff0054;
+        }
+        
+    }
+}
