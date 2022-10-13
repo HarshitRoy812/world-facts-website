@@ -349,4 +349,14 @@ body {
   margin-left: auto;
   margin-right: 20px;
   font-size: 15px;
+}
+#footer_1 #special {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+#footer_1 span {
+  margin-left: 20px;
+  color: white;
+  font-family: "Inaptly";
 }/*# sourceMappingURL=index.css.map */
